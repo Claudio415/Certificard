@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+body {
+  background: linear-gradient(236.85deg, #8b4513 35.26%, #deb887 80.03%);
+  font-family: "Inconsolata", monospace;
+}
+/* aqui se definem a cor de fundo, a cor da fonte ao lado da foto, margem entre o marrom e o branco azulado, a borda redonda e a sombra do bloco imagem/texto/foto e uma distancia(padding) entre o bloco e a borda branco azulada. No .perfil-foto são definidos o formato, tamanho e sombreamento. No .titulo se desloca o bloco de texto para a esquerda... lembrando que para cada .XXX foi criada uma class no HTML, exemplo class = perfil-foto   .perfil-foto  */
+.container {
+  background: #fffacd;
+  color: #1c1c1c;
+  margin: 50px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 6px #0e1d2f;
+  padding: 30px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  border-radius: 150px;
+  max-height: 250px;
+  max-width: 300px;
+  box-shadow: 0px 13px 13px rgba(0, 0, 0, 0.25);
+}
+.titulo {
+  margin-left: 20px;
+}
+.titulo h1 {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.titulo h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.titulo h3 {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.tema button {
+  align-self: right;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: #ecf4ff;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #0e1d2f;
+  box-shadow: 4px 4px 3px #0e1d2f;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(236.85deg, #499cfe 35.26%, #9cc8fc 80.03%);
+  margin: 50px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 3px #0e1d2f;
+  padding: 30px;
+}
+.projetos-estilo {
+  margin-bottom: 10px;
+  font-weight: bolder;
+  list-style: none;
+}
+
+.conquistas {
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.conquistas ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.conquistas li {
+  list-style-type: none;
+}
+
+.conquistas img {
+  max-height: 100px;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+
+.dark .portfolio {
+  color: #1c1c1c;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .projetos-estilo {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  color: #ffffff;
+  background: #1c1c1c;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #f7f7f7;
+  box-shadow: 4px 4px 3px #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border: 1.8px solid #1c1c1c;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ecf4ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf4ff;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  margin: 15px 0px;
+}
